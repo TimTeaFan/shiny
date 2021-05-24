@@ -1331,13 +1331,13 @@ function main(): void {
         if ($targetLiTag) {
           $targetLiTag.before($liTag);
         } else {
-          $tabset.append($liTag);
+          $tabset.prepend($liTag);
         }
       } else if (message.position === "after") {
         if ($targetLiTag) {
           $targetLiTag.after($liTag);
         } else {
-          $tabset.prepend($liTag);
+          $tabset.append($liTag);
         }
       }
 
